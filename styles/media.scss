@@ -1,0 +1,195 @@
+//
+// responsive css
+// --------------------------------------------
+
+
+@media screen and (max-width: 1280px){
+  header{
+    .nav-in-wrap{
+      max-width: 720px;
+      margin: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px){
+  #sect2{
+    .download-steps{
+      justify-content: space-evenly;
+      li{
+        padding-left: 15px;
+        padding-right: 15px;
+        &:after{
+          display: none !important;
+        }
+      }
+    }
+  }
+  #sect3{
+    .advantage{
+      justify-content: space-evenly;
+      li{
+        max-width: 280px;
+        img{
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  #sect4{
+    .solutions-wrap{
+      justify-content: space-evenly;
+      .solution-item{
+        max-width: 280px;
+      }
+    }
+  }
+  footer{
+    .footer-flex-wrap{
+      justify-content: space-evenly;
+    }
+  }
+}
+
+@media screen and (max-width: 992px){
+  header{
+    .nav-in-wrap{
+      max-width: 650px;
+    }
+    .bar{
+      float: left;
+      left: 15px;
+    }
+    .phone-num{
+      width: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      p{
+        font-size: 14px;
+      }
+    }
+    .login-btn{
+      right: 15px;
+    }
+  }
+  .fixed-cont{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #sect4{
+    .solutions-wrap{
+      text-align: center;
+      display: block;
+      .solution-item{
+        width: 100%;
+        max-width: 80%;
+        display: block;
+        margin: 70px auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  header{
+    .nav-in-wrap{
+      max-width: 480px;
+    }
+  }
+}
+
+@media screen and (max-width: 690px){
+  #sect2{
+    padding-top: 0;
+    padding-bottom: 50px;
+    .download-steps{
+      display: block;
+      li{
+        display: block;
+        margin-top: 50px;
+      }
+    }
+  }
+  #sect3{
+    padding-bottom: 55px;
+    .advantage{
+      display: block;
+      li{
+        display: block;
+        max-width: none;
+        h4{
+          max-width: none;
+        }
+      }
+    }
+  }
+  footer{
+    .footer-flex-wrap{
+      display: block;
+      div{
+        display: inline-block;
+        margin: 15px;
+        ul{
+          border: none;
+        }
+      }
+    }
+  }
+  .large{
+    width: 100%;
+    max-width: 280px;
+    font-size: 20px;
+  }
+  header{
+    .nav-in-wrap{
+      max-width: 370px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px){
+  h1{
+    font-size: 45px;
+  }
+  header{
+    min-height: 100px;
+    .nav-in-wrap{
+      top: -12px;
+      max-width: none;
+      width: 100%;
+      display: block;
+      div{
+        display: inline-block;
+      }
+    }
+    .bar{
+      top: 70px;
+    }
+    .phone-num{
+      line-height: 14px;
+      padding: 5px;
+      margin-top: 27px;
+      height: auto;
+    }
+    .login-btn{
+      top: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px){
+  #sect1{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .large{
+    max-width: 100%;
+  }
+  #sect4{
+    .solutions-wrap{
+      .solution-item{
+        max-width: none;
+      }
+    }
+  }
+}

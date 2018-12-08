@@ -1,0 +1,350 @@
+@font-face {
+	font-family: pfabold;
+	src: url("../fonts/PFAgoraSansPro-Bold.ttf");
+}
+@font-face {
+	font-family: pfalight;
+	src: url("../fonts/PFAgoraSansPro-Light.ttf");
+}
+@font-face {
+	font-family: pfamedium;
+	src: url("../fonts/PFAgoraSansPro-Medium.ttf");
+}
+@font-face {
+	font-family: pfaregular;
+	src: url("../fonts/PFAgoraSansPro-Regular.ttf");
+}
+@font-face {
+	font-family: pfathin;
+	src: url("../fonts/PFAgoraSansPro-Thin.ttf");
+}
+@font-face {
+	font-family: pfaxthin;
+	src: url("../fonts/PFAgoraSansPro-XThin.ttf");
+}
+
+body{
+	font-family: "pfalight", sans-serif;
+	color: #000;
+	line-height: 1.2;
+}
+
+h1{
+	font-family: "pfaxthin", sans-serif;
+	font-size: 60px;
+	text-align: center; 
+	font-variant: small-caps;
+}
+
+h4{
+	font-size: 24px;
+	text-align: center;
+}
+
+h3{
+	font-size: 36px;
+	font-variant: small-caps;
+	font-family: "pfaregular", sans-serif;
+	text-transform: capitalize;
+}
+
+p{
+	font-size: 16px;
+
+}
+
+header{
+	position: relative;
+	margin: 0 auto;
+	max-width: 1520px;
+	min-height: 80px;
+	background: #ffffff;
+	.nav-in-wrap{
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+	}
+	.phone-num{
+		position: absolute;
+		right: 0;
+		width: 211px;
+		height: 37px;
+		margin-top: 21px;
+		text-align: center;
+		border-radius: 10px;
+		background-color: rgb(255, 210, 0);
+		line-height: 37px;
+		p{
+			display: inline-block;
+		}
+	}
+	.login-btn{
+		position: absolute;
+		right: 70px;
+		top: 25px;
+	}
+	.bar{
+		position: absolute;
+		left: 70px;
+		top: 31px;
+		cursor: pointer;
+	}
+	.logo{
+		position: relative;
+		left: 0;
+		margin-top: 30px;
+	}
+}
+
+section{ 
+	padding-top: 55px;
+	text-align: center;
+}
+
+/* two big a buttons */
+.large{
+	width: 379px;
+	height: 68px;
+	display: inline-block;
+	text-align: center;
+	line-height: 68px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	font-size: 26px;
+	text-transform: uppercase;
+}
+
+a{
+	transition: all 0.3s;
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+/* main container with 1079px width */
+.fixed-cont{
+	max-width: 1079px;
+	margin: auto;
+}
+
+main{
+	max-width: 1520px;
+	margin: 0 auto;
+}
+
+/* Section 1 and all it's components are in it */
+#sect1{
+	min-height: 550px;
+	background: url("../images/main-banner.png") no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center bottom;
+	h4{
+		margin-top: 29px;
+	}
+	.large{
+		margin-top: 70px;
+		color: #212121;
+		border-color: #000000;
+		background-color: rgba(255, 210, 0, 0);
+		&:hover{
+			background: #e11a27;
+			color: #fff;
+			border-color: #e11a27;
+		}
+	}
+}
+/* Section 1 and all it's components are in it______________ */
+
+
+/* Section 2 and all it's components are in it */
+#sect2{
+	min-height: 360px;
+	.download-steps{
+		display: flex;
+		justify-content: space-between;
+		font-size: 0;
+		li{
+			position: relative;
+			padding-left: 65px;
+			padding-right: 65px;
+			h4{
+				margin: 25px auto 0 auto;
+				max-width: 140px;
+			}
+			&:not(:last-child):after{
+				content: url(../images/dashline.png);
+				display: block;
+				position: absolute;
+				right: -65px;
+				top: 69px;
+			}
+		}
+	}
+}
+/* Section 2 and all it's components are in it______________ */
+
+/* Section 3 and all it's components are in it */
+#sect3{
+	min-height: 817px;
+	background-color: rgb(243, 240, 231);
+	.advantage{
+		display: flex;
+		justify-content: space-between;
+		li{
+			display: inline-block;
+			max-width: 314px;
+			margin-top: 63px;
+			padding-left: 23px;
+			padding-right: 23px;
+			text-align: center;
+			h4{
+				margin-top: 22px;
+				max-width: 267px;
+			}
+			p{
+				display: inline-block;
+				min-height: 73px;
+				max-width: 267px;
+				margin-top: 24px;
+			}
+		}
+	}
+	.large{
+		margin-top: 57px;
+		background: #e11a27;
+		color: #ffffff;
+		border-color: #e11a27;
+		&:hover{
+			background: #cc333d;
+		}
+	}
+}
+/* Section 3 and all it's components are in it______________ */
+
+/* Section 4 and all it's components are in it */
+#sect4{
+	min-height: 906px;
+	.solutions-wrap{
+		display: flex;
+		justify-content: space-between;
+		.solution-item{
+			position: relative;
+			width: 314px;
+			margin-top: 83px;
+			padding: 45px 5px 14px 5px;
+			text-align: left;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			background: #FFD200;
+			.bestseller{
+				display: inline-block;
+				height: 22px;
+				width: 100%;
+				background: url("../images/bestsell.png")no-repeat;
+				background-position: center center;
+				text-align: center;
+				position: absolute;
+				left: 50%;
+				transform: translate(-50%);
+				top: -22px;
+				padding-top: 5px;
+				color: rgb(225, 26, 39);
+				font-size: 20.76px;
+				font-variant: small-caps;
+				font-family: "pfabold", sans-serif;
+			}
+			div{
+				position: relative;
+				min-height: 252px;
+				padding: 22px;
+				margin-top: 45px;
+				background: #ffffff;
+				h2{
+					position: absolute;
+					bottom: 0;
+					left: 50%;
+					transform: translate(-50%);
+					background: #ffffff;
+					font-size: 60px;
+					text-align: center;
+				}
+			}
+			h3{
+				text-align: center;
+				font-size: 36px;
+				font-family: "pharegular", sans-serif;
+			}
+			ul{
+
+				li{
+					position: relative;
+					margin-top: 11px;
+					padding-left: 38px;
+					font-size: 18px;
+					font-family: "pharegular", sans-serif;
+					&:before{
+						content: url("../images/check-ico.png");
+						width: 20px;
+						height: 20px;
+						position: absolute;
+						left: 0;
+					}
+				}
+			}
+			p{
+				font-variant: small-caps;
+				margin-top: 18px;
+				text-align: center;
+				font-size: 19.303px;
+			}
+		}
+	}
+}
+/* Section 4 and all it's components are in it______________ */
+
+footer{
+	min-height: 405px;
+	padding-top: 50px;
+	background: #FFD200;
+	p{
+		text-align: center;
+		margin-top: 40px;
+	}
+	.footer-flex-wrap{
+		display: flex;
+		justify-content: space-between;
+		div{
+			ul{
+				padding-top: 10px;
+				border-top: 1px solid;
+				li{
+					margin-top: 20px;
+					a{
+						font-size: 18px;
+						font-family: "pfaregular", sans-serif;
+						color: #000000;
+					}
+				}
+				&.font-variant{
+					li{
+						a{
+							font-variant: small-caps;
+						}
+					}
+				}
+				&.social{
+					li{
+						display: inline-block;
+					}
+					& + img{
+						margin-top: 52px;
+					}
+				}
+			}
+		}
+	}
+}
